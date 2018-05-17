@@ -1,4 +1,4 @@
-package ProducerConsumer.ex1.ex2.ex3;
+package ProducerConsumer.ex1;
 
 import java.util.concurrent.SynchronousQueue;
 
@@ -9,7 +9,7 @@ public class SynchronousQueueDemo2 {
 
     public static void main(String[] args) {
 
-        SynchronousQueue<String> queue = new SynchronousQueue<>();
+        SynchronousQueue<String> queue = new SynchronousQueue<>(true);
         Thread producer = new Thread("PRODUCER"){
             @Override
             public void run() {

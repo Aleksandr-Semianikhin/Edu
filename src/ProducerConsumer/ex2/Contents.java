@@ -1,4 +1,4 @@
-package ProducerConsumer.ex1.ex2.ex4;
+package ProducerConsumer.ex2;
 
 /**
  * Created by home on 17.05.2018.
