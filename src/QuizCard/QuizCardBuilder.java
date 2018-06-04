@@ -17,6 +17,11 @@ public class QuizCardBuilder {
     private ArrayList<QuizCard> cardList;
     private JFrame frame;
 
+    public static void main(String[] args) {
+        QuizCardBuilder builder = new QuizCardBuilder();
+        builder.go();
+    }
+
     public void go(){
 
         //Create GUI
@@ -37,7 +42,7 @@ public class QuizCardBuilder {
         answer.setWrapStyleWord(true);
         answer.setFont(bigFont);
 
-        JScrollPane aScroller = new JScrollPane(question);
+        JScrollPane aScroller = new JScrollPane(answer);
         aScroller.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
         aScroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
