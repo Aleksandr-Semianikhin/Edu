@@ -210,6 +210,7 @@ public class BeatBox {
                 fis = new FileInputStream(new File("Chechbox.ser"));
                 ObjectInputStream is = new ObjectInputStream(fis);
                 checkBoxState = (boolean[]) is.readObject();
+                is.close();
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (ClassNotFoundException e) {
